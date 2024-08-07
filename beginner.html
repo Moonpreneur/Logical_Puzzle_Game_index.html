@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Levels</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .btn-grid{
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            grid-gap: 10px;
+            margin: 20px;
+            margin-top: 0px;
+            text-align: center;
+        }
+        .btns{
+            text-align: center;
+            min-height: 50px;
+            margin: 5px;
+        }
+        .btns:hover{
+            color: #fff;
+            text-decoration: none;
+            background-color: #f7efef;
+            box-shadow: none;
+        }
+        @media only screen and (max-width: 800px){
+        .btn-grid{
+            grid-template-columns: repeat(3,auto);
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <div id="logo">
+    <img src="website.png" alt="website-logo">
+  </div>
+  
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="lcontainer">
+        <div class="btn-grid">
+            <a class="btns" href="beg1.html">Level 1</a>
+            <a class="btns" href="beg2.html">Level 2</a>
+            <a class="btns" href="beg3.html">Level 3</a>
+            <a class="btns" href="beg4.html">Level 4</a>
+            <a class="btns" href="beg5.html">Level 5</a>
+        </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(to right, rgb(240, 63, 63), rgb(44, 44, 241));
+    color: whitesmoke;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.btns:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.name, .explain {
+    font-size: 1.2em;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: #f3eded;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn1:hover {
+    background-color: #138496;
+}
+ and .container{
+    text-align: center;
+}
+.question-number{
+    min-height: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+.question{
+    height: 300px;
+}
+
+.question td{
+  width: 25%;
+  height: 25%;
+  cursor: pointer;
+  font-size: 6rem;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: rgb(99, 99, 99);
+  border: 1px solid rgba(65, 65, 65, 0.616);
+  box-shadow: inset 2px 2px 3px 1px rgba(116, 116, 116, 0.5), inset -2px -2px 3px 1px rgba(65, 65, 65, 0.3);
+}
+
+
+
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.next-prev{
+    text-align: center;
+    margin-top: 20px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+  text-decoration: none;
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+.round {
+  border-radius: 50%;
+}
+.solution{
+    float: left;
+}
+.hid{
+    color: red;
+    font-weight: bolder;
+}
+#numb{
+    border: 1px solid #000;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: lightblue;
+  }
+    img{
+        width: 500px;
+        height: 200px;
+    }
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.btn-grid {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+  grid-template-columns: repeat(2,auto);
+}
+
+.btns {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  min-height: 70px;
+  min-width: 150px; 
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2em;
+  box-shadow: 3px 5px 2px 2px rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; 
+  padding: 35px;
+  transition: background-color 0.3s;
+  width: 25%;
+  box-shadow: 3px 5px 2px 2px rgba(255, 255, 255, 0.5);
+}

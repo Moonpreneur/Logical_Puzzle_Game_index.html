@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levels</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">MPR</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+      <h1 id="level-title"></h1>
+      <div class="btn-grid">
+          <a class="btns" href="game.html?level=1">Level 1</a>
+          <a class="btns" href="game.html?level=2">Level 2</a>
+          <a class="btns" href="game.html?level=3">Level 3</a>
+          <a class="btns" href="game.html?level=4">Level 4</a>
+          <a class="btns" href="game.html?level=5">Level 5</a>
+      </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const difficulty = urlParams.get('difficulty');
+        const levelTitle = document.getElementById('level-title');
+        
+        switch (difficulty) {
+            case 'beginner':
+                levelTitle.textContent = "Beginner Levels";
+                break;
+            case 'medium':
+                levelTitle.textContent = "Medium Levels";
+                break;
+            case 'advanced':
+                levelTitle.textContent = "Advanced Levels";
+                break;
+            default:
+                levelTitle.textContent = "Levels";
+        }
+    });
+  </script>
+</body>
+</html>
